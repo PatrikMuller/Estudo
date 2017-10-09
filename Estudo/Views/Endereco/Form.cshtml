@@ -1,0 +1,21 @@
+﻿@model Estudo.Models.Pessoa
+
+@using (Html.BeginForm("Grava", "Pessoa", FormMethod.Post))
+{
+    @Html.LabelFor(p => p.Id, "Id:")
+    @Html.TextBoxFor(p => p.Id, new { @readonly = "true" })
+        
+    @Html.LabelFor(p => p.Nome, "Nome:")
+    @Html.TextBoxFor(p => p.Nome)
+    @Html.ValidationMessage("Nome")
+    
+    @Html.LabelFor(p => p.CpfCnpj, "CpfCnpj:")
+    @Html.TextBoxFor(p => p.CpfCnpj)
+    @Html.ValidationMessage("CpfCnpj")
+    
+    @Html.LabelFor(p => p.DataNascimento, "Data de Nascimento:")
+    @Html.TextBoxFor(p => p.DataNascimento, new { type = "date" })
+    @Html.ValidationMessage("DataNascimento")
+        
+    <input type="submit" value="Cadastrar" />
+}

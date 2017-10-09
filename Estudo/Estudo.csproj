@@ -158,12 +158,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PessoaController.cs" />
+    <Compile Include="Data_Access\EnderecoAccess.cs" />
     <Compile Include="Data_Access\PessoaAccess.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NHibernateHelper.cs" />
+    <Compile Include="Mapping\EnderecoMapping.cs" />
     <Compile Include="Mapping\PessoaMapping.cs" />
+    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -190,6 +193,8 @@
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Pessoa\Index.cshtml" />
     <Content Include="Views\Pessoa\Form.cshtml" />
+    <Content Include="Views\Endereco\Form.cshtml" />
+    <Content Include="Views\Endereco\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
